@@ -1,3 +1,4 @@
+# NodeJS Tingkat Pemula Part I
 Pemateri: Raka Ardhi
 Sumber: Course Kode.id (NodeJS Tingkat Pemula)
 Tanggal: 16 Agustus 2023
@@ -64,4 +65,4 @@ Tanggal: 16 Agustus 2023
 ## Tambahan
 Hari ini cukup menyenangkan karena saya sudah mulai praktik koding walaupun mulai dari dasar
 ## Lampiran
-- [Github](https://github.com/punkestu/hacktiv8-mbkm/tree/main/160823-get-started)
+- [Github](https://github.com/punkestu/code-archive-mbkm-mbkm/tree/main/160823-get-started)
