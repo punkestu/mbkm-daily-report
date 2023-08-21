@@ -1,0 +1,41 @@
+Moch. Bima Pangestu
+NodeJS For Back End Web Developer
+
+- NodeJS adalah runtime javascript non-blocking IO yang bisa berjalan di luar browser dan berjalan secara single thread dan asynchronous sehingga tidak perlu membuat thread baru setiap ada request baru, namun tetap bisa berjalan secara non-blocking sehingga bisa berjalan lebih cepat.
+- Untuk membuat fungsi kita bisa menggunakan keyword 'function' lalu diikuti nama fungsi, parameter dan bodynya.
+- Untuk memanggil fungsi, tulis nama fungsi dan diikuti argumennya jika perlu. 
+- Ada 3 macam module di javascript 'built in module', 'user defined module' dan 'third party module'.
+- Untuk mengimport module ke kode kita bisa menggunakan require().
+- Untuk membuat module, kita harus melakukan export operasi/fungsi yang kita buat.
+- Kita hanya bisa mengakses operasi yang ada di dalam module setelah melakukan import
+- Event dapat digunakan sebagai implementasi asynchronous di javascript dimana sebuah operasi pada sebuah listener akan dijalankan secara asynchronous jika eventnya ditrigger. 
+- Untuk membuat listener kita menggunakan method on() dan untuk mentrigger event kita menggunakan method emmit().
+- Buffer digunakan untuk menghandle binary atau raw data pada javascript
+- Untuk membaca buffer sebagai string kita bisa menggunakan method toString(). Sedangkan jika ingin membaca sebagai int atau nilai raw nya, kita bisa mengakses seperti mengakses array.
+- Stream adalah sequence dari data yang dipindah dimana nantinya data akan dipecah menjadi bagian kecil dan ditransfer satu per satu.
+- Stream bisa ditulis dan dibaca. Untuk membaca kita perlu membuat reader stream dan listen pada event 'data'.
+- Untuk menulis kita perlu membuat writer stream lalu memanggil method write() dan method end() untuk mentrigger event 'end'. 
+- Untuk cek error kita bisa listen dari event 'error'.
+- Pipe dapat digunakan untuk pass data dari sebuah reader stream ke stream lain secara langsung. Kita juga bisa melakukan operasi pipe secara berantai (chain pipe).
+- Untuk read file kita bisa menggunakan module fs dan memanggil method readFile() untuk asynchronous dan readFileSync() untuk synchronous.
+- Untuk write file kita juga bisa menggunakan module fs dan memanggil method writeFile() untuk asynchronous dan writeFileSync() untuk synchronous.
+- Untuk menulis file dalam bentuk binary, kita bisa mengirimkan data dalam bentuk buffer.
+- Watch file digunakan untuk memonitor event yang terjadi pada sebuah file atau folder. 
+- Untuk membuat http server, Import http module lalu buat http server dengan createServer(). Lalu kita panggil method listen() untuk menjalankan server.
+- Untuk mempersiapkan response header kita bisa melakukan writeHead() dan response body dengan write() pada stream response.
+- Untuk menginstall module third party kita bisa mengunakan 'npm install nama-module' dan setelah install maka akan muncul folder node_modules yang akan menampung semua third party module yang kita install.
+- Untuk membuat server dengan express, kita perlu menginisialisasi app express terlebih dahulu. Lalu kita lakukan listen pada port yang kita inginkan untuk menjalankan server.
+- Middleware digunakan untuk menjalankan operasi sebelum dan sesudah menjalankan listener utama.
+- Untuk membuat middleware, kita menggunakan method use() dengan parameter route name dan handler dengan parameter next.
+- Jika kita membuat lebih dari 1 middleware, maka akan dijalankan urut dari atas ke bawah.
+- Middleware juga bisa untuk mengexpose sebuah folder (misal untuk mengakses file css) dengan menggunakan middleware express.static('\<nama-folder\>').
+- Route akan mengatur jalur dari request yang dikirim ke server kita. Pengaturannya akan berdasarkan endpoint (misal: '/' atau '/user') dan method (GET, POST, dll).
+- Jika menggunakan GET maka data yang dikirim akan muncul di url. Sedangkan jika menggunakan method yang lain data tidak muncul di url.
+- Kita bisa menggunakan module body-parser untuk memparse body request yang dikirimkan dengan POST.
+- Templating engine dapat digunakan untuk membuat html berinteraksi dengan variabel sehingga menjadi lebih dinamis. Salah satu templating engine di javascript adalah EJS.
+- Untuk memasang EJS pada server kita harus install ejs dan mengunakan method set() pada app dengan parameter 'view engine' dan 'ejs'.
+- EJS akan otomatis mengakses folder views untuk mendapatkan semua template htmlnya.
+- Untuk mengenerate html menggunakan EJS, kita harus menggunakan method render() dan mengirimkan semua variabel yang diperlukan pada template tersebut (jika datanya kosong maka kirimkan null).
+- Bracket EJS adalah \<\% \%\>.
+- Untuk output data dapat menggunakan \<\%= nama-variabel\%\>
+- Untuk memanggil API menggunakan javascript, kita bisa menggunakan module request. untuk request kita bisa langsung panggil fungsi request setelah diimport dengan parameter api url dan callback untuk hasil requestnya.
